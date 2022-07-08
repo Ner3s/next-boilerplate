@@ -1,5 +1,3 @@
-const teste = 'testa';
-
 export default function Home() {
   return (
     <div>
