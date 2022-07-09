@@ -1,16 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Main /> should render the heading 1`] = `
+.c0 {
+  background-color: #283036;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c1 {
+  font-size: 2.5rem;
+}
+
+.c2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
 <main
-  class="sc-f1e8345d-0 fXhvcW"
+  class="c0"
 >
   <h1
-    class="sc-f1e8345d-1 dhdpus"
+    class="c1"
   >
     NextJS - Boilerplate
   </h1>
   <h2
-    class="sc-f1e8345d-2 gagCGR"
+    class="c2"
   >
     NextJS, Typescript e Styled-Components
   </h2>
