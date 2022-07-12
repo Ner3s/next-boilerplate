@@ -1,10 +1,13 @@
 import * as S from './styles';
 
-function Main() {
+function Main({
+  title = 'NextJS - Boilerplate',
+  description = 'NextJS, Typescript e Styled-Components'
+}) {
   return (
     <S.Wrapper>
-      <S.Title>NextJS - Boilerplate</S.Title>
-      <S.Description>NextJS, Typescript e Styled-Components</S.Description>
+      <S.Title>{title}</S.Title>
+      <S.Description>{description}</S.Description>
     </S.Wrapper>
   );
 }
