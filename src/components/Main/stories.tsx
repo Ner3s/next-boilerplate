@@ -3,15 +3,7 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {
   title: 'Main',
-  component: Main,
-  argTypes: {
-    title: {
-      description: 'Titulo do componente'
-    },
-    description: {
-      description: 'Descrição do componente'
-    }
-  }
+  component: Main
 } as ComponentMeta<typeof Main>;
 
 export const Basic: ComponentStory<typeof Main> = (args) => <Main {...args} />;
