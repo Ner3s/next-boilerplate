@@ -20,7 +20,7 @@
       {
         "newlinesBetween": "always", // insere uma linha em branco após cada grupo de prioridade
         "groups": [
-          ["/^react/", "/^redux/"], // primeiro grupo: tudo que inicia com 'react' e 'redux'
+          ["/^react/", "/^next/", "/^redux/"], // primeiro grupo: tudo que inicia com 'react' e 'redux'
           "/styled-components/", // segundo grupo: tudo o que for importado diretamente da biblioteca styled-components. Isso é para garantir que a primeira importação nos arquivos styles.js seja sempre a do styled-components.
           "module", // terceiro grupo: tudo que é um módulo (qualquer biblioteca listada no arquivo package.json)
           "/^@/components/", // quarto grupo: todas os meus componentes
