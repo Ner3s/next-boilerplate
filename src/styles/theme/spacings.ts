@@ -1,0 +1,20 @@
+export const spacings = {
+  xxtiny: '0.1rem',
+  xtiny: '0.2rem',
+  tiny: '0.4rem',
+  xxsmall: '0.8rem',
+  xsmall: '1.2rem',
+  small: '1.6rem',
+  mediumSmall: '2.0rem',
+  medium: '2.4rem',
+  mediumLarge: '2.8rem',
+  large: '3.2rem',
+  xlarge: '3.6rem',
+  xxlarge: '4.0rem',
+  huge: '4.4rem',
+  xhuge: '4.8rem',
+  xxhuge: '5.6rem',
+  hero: '6.4rem',
+  xhero: '7.2rem',
+  xxhero: '8.0rem'
+} as const;
