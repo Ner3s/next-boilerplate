@@ -1,4 +1,5 @@
 import { Main } from '.';
+
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 export default {

@@ -1,5 +1,5 @@
 {
-  "plugins": ["@typescript-eslint"],
+  "plugins": ["@typescript-eslint", "import-helpers"],
   "extends": [
     "eslint:recommended",
     "plugin:prettier/recommended",
@@ -14,6 +14,25 @@
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "no-unused-vars": "warn",
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "import-helpers/order-imports": [
+      "warn", // exibe um alerta no editor
+      {
+        "newlinesBetween": "always", // insere uma linha em branco após cada grupo de prioridade
+        "groups": [
+          ["/^react/", "/^next/", "/^redux/"], // primeiro grupo: tudo que inicia com 'react' e 'redux'
+          "/styled-components/", // segundo grupo: tudo o que for importado diretamente da biblioteca styled-components. Isso é para garantir que a primeira importação nos arquivos styles.js seja sempre a do styled-components.
+          "module", // terceiro grupo: tudo que é um módulo (qualquer biblioteca listada no arquivo package.json)
+          "/^@/components/", // quarto grupo: todas os meus componentes
+          "/^@/templates/", // quinto grupo: todas os meus componentes
+          ["parent", "sibling", "index"], // sexto grupo: qualquer arquivo pai, irmão ou filho do arquivo atual
+          "/^@/contexts/",
+          "/^@/hooks/",
+          "/^@/", // sétimo grupo: todos os outros arquivos importados pelo alias configurado
+          "/styles/" // último grupo: os meus estilos
+        ],
+        "alphabetize": { "order": "asc", "ignoreCase": true } // configura as importações por ordem alfabética (crescente), ignorando maiúsculas e minúsculas
+      }
+    ]
   }
 }
