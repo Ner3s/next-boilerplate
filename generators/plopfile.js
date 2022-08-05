@@ -14,6 +14,11 @@ const CONSTANTS = {
     path: '../src/{{folderName}}/{{pascalCase name}}/test.tsx',
     templateFile: 'templates/components/test.hbs'
   },
+  TEST_TEMPLATE: {
+    type: 'add',
+    path: '../src/{{folderName}}/{{pascalCase name}}/test.tsx',
+    templateFile: 'templates/components/test-template.hbs'
+  },
   INDEX: {
     type: 'add',
     path: '../src/{{folderName}}/{{pascalCase name}}/index.tsx',
@@ -39,7 +44,11 @@ const handleComponents = {
     CONSTANTS.STORIES,
     CONSTANTS.STYLES
   ],
-  templates: [CONSTANTS.INDEX_TEMPLATE, CONSTANTS.TEST, CONSTANTS.STYLES]
+  templates: [
+    CONSTANTS.INDEX_TEMPLATE,
+    CONSTANTS.TEST_TEMPLATE,
+    CONSTANTS.STYLES
+  ]
 };
 
 module.exports = function (plop) {
