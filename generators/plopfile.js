@@ -2,32 +2,32 @@ const CONSTANTS = {
   STYLES: {
     type: 'add',
     path: '../src/{{folderName}}/{{pascalCase name}}/styles.ts',
-    templateFile: 'templates/components/styles.ts.hbs'
+    templateFile: 'templates/components/styles.hbs'
   },
   STORIES: {
     type: 'add',
     path: '../src/{{folderName}}/{{pascalCase name}}/stories.tsx',
-    templateFile: 'templates/components/stories.tsx.hbs'
+    templateFile: 'templates/components/stories.hbs'
   },
   TEST: {
     type: 'add',
     path: '../src/{{folderName}}/{{pascalCase name}}/test.tsx',
-    templateFile: 'templates/components/test.tsx.hbs'
+    templateFile: 'templates/components/test.hbs'
   },
   INDEX: {
     type: 'add',
     path: '../src/{{folderName}}/{{pascalCase name}}/index.tsx',
-    templateFile: 'templates/components/index.tsx.hbs'
+    templateFile: 'templates/components/index.hbs'
   },
   INDEX_TEMPLATE: {
     type: 'add',
     path: '../src/{{folderName}}/{{pascalCase name}}/index.tsx',
-    templateFile: 'templates/components/index-template.tsx.hbs'
+    templateFile: 'templates/components/index-template.hbs'
   },
   INDEX_PAGE: {
     type: 'add',
     path: '../src/{{folderName}}/{{pascalCase name}}/index.tsx',
-    templateFile: 'templates/components/index-page.tsx.hbs'
+    templateFile: 'templates/components/index-page.hbs'
   }
 };
 
@@ -77,7 +77,7 @@ module.exports = function (plop) {
       {
         type: 'add',
         path: '../src/services/{{name}}/index.ts',
-        templateFile: 'templates/service.ts.hbs'
+        templateFile: 'templates/service.hbs'
       }
     ]
   });
