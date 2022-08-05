@@ -1,0 +1,32 @@
+import { useState, useEffect } from 'react';
+
+interface I{{pascalCase name}} {
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+/**
+ *  Function is responsible for {{sentenceCase name}}
+ */
+async function {{camelCase name}}({ setLoading }: I{{pascalCase name}}) {
+  try {
+    setLoading(true);
+    //
+  } catch (error: unknown) {
+    //
+  } finally {
+    setLoading(false);
+    //
+  }
+}
+
+function use{{pascalCase name}}() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    {{camelCase name}}({ setLoading });
+  }, []);
+
+  return [loading] as const;
+}
+
+export { use{{pascalCase name}} };
