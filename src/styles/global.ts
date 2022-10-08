@@ -9,6 +9,10 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     font-size: 62.5%;
+
+    @media (min-width: 1981px) {
+      font-size: 80%;
+    };
   }
 
   html, body, #__next {
