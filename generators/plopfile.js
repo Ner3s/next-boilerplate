@@ -31,7 +31,7 @@ const CONSTANTS = {
   },
   INDEX_PAGE: {
     type: 'add',
-    path: '../src/{{folderName}}/{{pascalCase name}}/index.tsx',
+    path: '../src/{{folderName}}/{{lowerCase name}}/index.tsx',
     templateFile: 'templates/components/index-page.hbs'
   }
 };
